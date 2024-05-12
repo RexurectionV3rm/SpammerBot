@@ -8,7 +8,7 @@ if os.path.exists("utils/db.json"):
     with open("utils/db.json", "r") as f:
         DB = json.load(f)
 else:
-    DB = {"admins": [], "message": "DEFAULT MESSAGE @OPENSOURCEFFA", "groups": [], "spam_time": 10, "phone_number": "", "voips": [{"ph_num": "session_string"}]}
+    DB = {"admins": [], "message": "DEFAULT MESSAGE @OPENSOURCEFFA", "groups": [], "spam_time": 10, "phone_number": "", "voips": [{"ph_num": "session_string"}], "voip_added": False}
     with open("db.json", "w+") as f:
         json.dump(DB, f)
 
