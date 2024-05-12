@@ -9,7 +9,7 @@ if os.path.exists("utils/db.json"):
         DB = json.load(f)
 else:
     DB = {"admins": [], "message": "DEFAULT MESSAGE @OPENSOURCEFFA", "groups": [], "spam_time": 10, "phone_number": "", "voips": [], "voip_added": False}
-    with open("db.json", "w+") as f:
+    with open("utils/db.json", "w+") as f:
         json.dump(DB, f)
 
 def update():
