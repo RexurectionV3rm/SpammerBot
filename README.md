@@ -22,6 +22,14 @@ USE_PROXIES = False # DEFAULT False, TO USE PROXIES, LOAD PROXIES IN "proxies.tx
 Into your API keys, if you don't have API keys you can create an App to generate them [here](https://my.telegram.org/apps).
 You can choose either using proxies or not by changing the boolean to "True" or "False".
 
+You must run "main.py" at least one time before utilizing the bot.
+Once you've started at least one time, a new file will be created in the "utils" folder. "db.json".
+Add your Telegram ID to the admins list.
+```python
+"admins": []
+# Example: "admins": [1771075910]
+```
+
 ## Usage
 
 You can easily understand how the bot works by starting it.
