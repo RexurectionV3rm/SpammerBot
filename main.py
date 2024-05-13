@@ -100,7 +100,7 @@ async def cb_answer(cl,cb):
                     try: await ubot.disconnect() 
                     except Exception as e: print(e)
                 except SessionPasswordNeeded:
-                    await ubot.check_password((await client.ask(cb.from_user.id, ASK_2FA)).text)
+                    await ubot.check_password((await cl.ask(cb.from_user.id, ASK_2FA)).text)
                     ss = await ubot.export_session_string()
                     add_voip(phone_number, ss)
                     await cb.message.reply(ACCOUNT_LOGGED_IN)
