@@ -2,7 +2,6 @@ import pyrogram
 import time
 import pyromod
 from pyromod import *
-from pyromod import ask
 from pyrogram import *
 from pyrogram.types import *
 from pyrogram import enums
