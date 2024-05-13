@@ -114,7 +114,7 @@ def add_voip(phone_number, session_string):
     update()
     return f"VoIP {phone_number} added to the voips list."
 
-def remove_voip(phone_number):
+def remove_voip():
     DB["phone_number"] = ""
     DB["voips"] = []
     DB["voip_added"] = False
